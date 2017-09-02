@@ -276,11 +276,11 @@ class StartQT4(QMainWindow):
             status = True
             sys.stderr.write("[error] please install advancecomp")
 
-        retcode = self.safe_call("pngcrush" + exe + " -version")
-        if retcode != 0:
-            status = True
-            sys.stderr.write("[error] please install pngcrush")
-        return status
+#        retcode = self.safe_call("pngcrush" + exe + " -version")
+#        if retcode != 0:
+#            status = True
+#            sys.stderr.write("[error] please install pngcrush")
+#        return status
 
     def safe_call(self, command):
         """ cross-platform command-line check """
